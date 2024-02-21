@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #caff33;
+  --secondary-color: #1c1c1c;
+  --secondary-white: #e4e4e7;
+  --primary-background: #262626;
+  --primary-font: "Lexend", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191919;
+}
+
+/* Header Section */
+
+.header {
+  background-image: url("/assets//hero-bg.png");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+/* Navbar */
+
+.nav {
+  background: var(--secondary-color);
+  width: 90%;
+  margin: auto;
+  height: 75px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: var(--primary-font);
+}
+.nav-logo {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+.nav-links ul li {
+  cursor: pointer;
+}
+.nav-actions {
+  margin-right: 30px;
+  display: flex;
+  gap: 10px;
+}
+.nav-actions button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80px;
+  padding: 9px;
+  border-radius: 25px;
+}
+.nav-actions button:nth-child(2) {
+  background-color: var(--primary-color);
+
+  color: var(--secondary-color);
+}
+
+/* Navbar Ends */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  font-family: var(--primary-font);
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-section__tag {
+  display: flex;
+  background: var(--primary-background);
+  width: 330px;
+  height: 33px;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+  border-radius: 25px;
+  color: white;
+}
+.hero-section__headline {
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+}
+.hero-section__headline h1 span {
+  color: var(--primary-color);
+}
+.hero-section__headline p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--secondary-white);
+  line-height: 150%;
+}
+
+.hero-section__button {
+  margin-top: 20px;
+}
+.hero-section__button button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 130px;
+  height: 42px;
+  border: none;
+  border-radius: 25px;
+}
+.hero-img {
+  background-image: url("/assets/hero-img-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.hero-img div {
+  margin-right: 80px;
+}
