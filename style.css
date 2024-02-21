@@ -76,6 +76,17 @@ body {
   color: var(--secondary-color);
 }
 
+.nav-mobile-btn {
+  display: none;
+}
+.nav-mobile-btn button {
+  background-color: var(--primary-color);
+  padding: 9px;
+  width: 70px;
+  border: none;
+  border-radius: 25px;
+}
+
 /* Navbar Ends */
 .hero-section {
   display: flex;
@@ -136,4 +147,36 @@ body {
 }
 .hero-img div {
   margin-right: 80px;
+}
+
+/* ? Hero section Ends */
+
+/*? Responsiveness */
+@media (max-width: 810px) {
+  /* ? Header Section */
+  .nav-links {
+    display: none;
+  }
+  .nav-actions {
+    display: none;
+  }
+  .nav-mobile-btn {
+    display: block;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .hero-section__tag {
+    margin: auto;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .hero-img div {
+    margin-right: 0;
+  }
+  /* ? Header Section Ends */
 }
